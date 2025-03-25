@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Register</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/register.css">
+
+  <!-- GF Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- FA Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container py-5 Content">
+    <div
+      class="about-content p-4 p-md-5 mx-auto position-relative col-lg-10 col-md-10 col-sm-12 calculator-container FContainer">
+      <h3 class="text-center fw-bold">Register</h3>
+
+      <hr class="border-success border-2 my-4">
+
+      <form method="POST" action="" id="deliveryRequest">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" value="" placeholder="First Name"
+              required>
+          </div>
+          <div class="col-md-6 mb-4">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" value="" placeholder="Last Name"
+              required>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email Address"
+            required>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-4">
+            <label for="dob" class="form-label">DOB</label>
+            <input type="date" class="form-control" id="dob" name="dob" value="" required>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="address" class="form-label">Home Address</label>
+          <input type="text" class="form-control" id="address" name="address" placeholder="Home Address" required>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password"
+              required>
+          </div>
+          <div class="col-md-6 mb-4">
+            <label for="second-password" class="form-label">Confirm Your Password</label>
+            <input type="password" class="form-control" id="second-password" name="second-password" value=""
+              placeholder="Confirm Your Password" required>
+          </div>
+        </div>
+        <div class="mb-2">
+          <p class="text-danger"><span class="text-danger">*</span> Use at least 12 characters with uppercase,
+            lowercase, numbers, and symbols for strong security.</p>
+        </div>
+
+        <button type="button" class="btn btn-primary w-100 RButton my-3" onclick="">Sign Up</button>
+      </form>
+
+      <hr class="border-success border-2 my-4">
+
+      <div class="">
+        <p class="text-muted text-center">Already have an account? <a href="#">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
