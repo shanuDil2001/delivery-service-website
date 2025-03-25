@@ -1,0 +1,76 @@
+:root {
+  /* Colors */
+  --backgroundColor: #FFD700;
+  --activeLinks: #ffffff;
+  --textShadow: #000000;
+  --links: #FFEB3B;
+  --faqBackground: #fff383;
+  --linkHover: #212121;
+  --hoverEffects: #212121;
+  --titleColor: #0D47A1;
+  --titleColorOne: #0d48a1ab;
+  --heroText: #E3E3E3;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --serviceBackground: #dff3ff;
+  --blackColor: #212121;
+  --bgColorOne: #0D47A1;
+  --bgColorTwo: #FF9800;
+  --text: #FFFFFF;
+  --links: #FFEB3B;
+  --hoverEffects: #424242;
+  --bodyBackground: #f4f7fc;
+
+  /* Fonts */
+  --fFamily: "Roboto", sans-serif;
+  --foSizing: auto;
+  --fWeight: 400;
+  --fStyle: normal;
+  --fvSettings: "wdth" 100;
+}
+
+body {
+  padding-top: 86px;
+  background-color: var(--bodyBackground) !important;
+
+}
+
+* {
+  font-family: var(--fFamily);
+  font-optical-sizing: var(--foSizing);
+  font-weight: var(--fWeight);
+  font-style: var(--fStyle);
+  font-variation-settings: var(--fvSettings);
+}
+
+/* Tracking */
+.Tracking .Header {
+  background: linear-gradient(135deg, var(--links), var(--links));
+}
+
+.Tracking .Header .Title {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.Tracking .Content .TContainer {
+  background-color: var(--activeLinks);
+  margin-top: -60px;
+  box-shadow: 2px 2px 4px var(--hoverEffects);
+}
+
+.Tracking .Content .TContainer .TrackButton {
+  color: var(--blackColor);
+  font-weight: 500 !important;
+  border: 1px solid var(--hoverEffects);
+  background-color: var(--links);
+  transition: all 200ms;
+}
+
+.Tracking .Content .TContainer .TrackButton:hover {
+  background-color: var(--backgroundColor);
+}
+
+.Tracking .Content .TContainer .TrackButton:active {
+  background-color: var(--links);
+}

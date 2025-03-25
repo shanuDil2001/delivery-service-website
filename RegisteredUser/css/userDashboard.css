@@ -1,0 +1,101 @@
+:root {
+  /* Colors */
+  --backgroundColor: #FFD700;
+  --activeLinks: #ffffff;
+  --textShadow: #000000;
+  --links: #FFEB3B;
+  --faqBackground: #fff383;
+  --linkHover: #212121;
+  --hoverEffects: #212121;
+  --titleColor: #0D47A1;
+  --titleColorOne: #0d48a1ab;
+  --heroText: #E3E3E3;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --serviceBackground: #dff3ff;
+  --blackColor: #212121;
+  --bgColorOne: #0D47A1;
+  --bgColorTwo: #FF9800;
+  --text: #FFFFFF;
+  --links: #FFEB3B;
+  --hoverEffects: #424242;
+  --bodyBackground: #f4f7fc;
+
+  /* Fonts */
+  --fFamily: "Roboto", sans-serif;
+  --foSizing: auto;
+  --fWeight: 400;
+  --fStyle: normal;
+  --fvSettings: "wdth" 100;
+}
+
+body {
+  padding-top: 86px;
+  background-color: var(--bodyBackground) !important;
+
+}
+
+* {
+  font-family: var(--fFamily);
+  font-optical-sizing: var(--foSizing);
+  font-weight: var(--fWeight);
+  font-style: var(--fStyle);
+  font-variation-settings: var(--fvSettings);
+}
+
+/* User Dashboard */
+.UDashboard .Header {
+  background: linear-gradient(135deg, var(--links), var(--links));
+  z-index: -1;
+}
+
+.UDashboard .Header .Title {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.UDashboard .Header .Text {
+  font-size: 1.05rem;
+  color: var(--blackColor);
+}
+
+.Content {
+  margin: 50px auto;
+  padding: 20px;
+  background: var(--whiteColor);
+  margin-top: -60px;
+  box-shadow: 2px 2px 4px var(--hoverEffects);
+}
+
+.ULinks {
+  color: var(--whiteColor);
+  background: var(--links);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--hoverEffects);
+}
+
+.ULinks .ULTitle {
+  color: var(--bgColorOne);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ULinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ULinks ul li a {
+  color: var(--hoverEffects);
+  text-decoration: none;
+  background-color: var(--faqBackground);
+  border: 2px solid var(--hoverEffects);
+  transition: all 200ms;
+}
+
+.ULinks ul li a:hover {
+  color: var(--whiteColor);
+  background-color: var(--backgroundColor);
+  border: 2px solid var(--whiteColor);
+}

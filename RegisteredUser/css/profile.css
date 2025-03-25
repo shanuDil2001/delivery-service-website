@@ -1,0 +1,105 @@
+:root {
+  /* Colors */
+  --backgroundColor: #FFD700;
+  --activeLinks: #ffffff;
+  --textShadow: #000000;
+  --links: #FFEB3B;
+  --faqBackground: #fff383;
+  --linkHover: #212121;
+  --hoverEffects: #212121;
+  --titleColor: #0D47A1;
+  --titleColorOne: #0d48a1ab;
+  --heroText: #E3E3E3;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --serviceBackground: #dff3ff;
+  --blackColor: #212121;
+  --bgColorOne: #0D47A1;
+  --bgColorTwo: #FF9800;
+  --text: #FFFFFF;
+  --links: #FFEB3B;
+  --hoverEffects: #424242;
+  --blueColor: #073c8b;
+  --bodyBackground: #f4f7fc;
+
+  /* Fonts */
+  --fFamily: "Roboto", sans-serif;
+  --foSizing: auto;
+  --fWeight: 400;
+  --fStyle: normal;
+  --fvSettings: "wdth" 100;
+}
+
+body {
+  background-color: var(--bodyBackground) !important;
+  padding-top: 86px;
+}
+
+* {
+  font-family: var(--fFamily);
+  font-optical-sizing: var(--foSizing);
+  font-weight: var(--fWeight);
+  font-style: var(--fStyle);
+  font-variation-settings: var(--fvSettings);
+}
+
+/* Profile */
+.UProfile .Header {
+  z-index: -1;
+  background: linear-gradient(135deg, var(--links), var(--links));
+}
+
+.UProfile .Header .Title {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.UProfile .Header .Text {
+  font-size: 1.05rem;
+  color: var(--blackColor);
+}
+
+.PContainer .Card {
+  border-radius: 0;
+  margin-top: -60px;
+  box-shadow: 2px 2px 3px var(--hoverEffects);
+}
+
+.PContainer .Card .PImage {
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--backgroundColor);
+  object-fit: cover;
+}
+
+.PContainer .Card .Form .RButton {
+  background-color: var(--titleColor);
+  font-weight: 500 !important;
+  border: 1px solid var(--hoverEffects);
+  color: var(--activeLinks);
+  transition: all 200ms;
+}
+
+.PContainer .Card .Form .RButton:hover {
+  background-color: var(--blueColor);
+}
+
+.PContainer .Card .Form .RButton:active {
+  background-color: var(--titleColor);
+}
+
+.PContainer .Card .Form .UButton {
+  color: var(--hoverEffects);
+  font-weight: 600 !important;
+  border: 1px solid var(--hoverEffects);
+  background-color: var(--backgroundColor);
+  transition: all 200ms;
+}
+
+.PContainer .Card .Form .UButton:hover {
+  background-color: var(--links);
+}
+
+.PContainer .Card .Form .UButton:active {
+  background-color: var(--backgroundColor);
+}
