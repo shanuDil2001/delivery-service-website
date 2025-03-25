@@ -1,0 +1,124 @@
+:root {
+  /* Colors */
+  --backgroundColor: #FFD700;
+  --activeLinks: #ffffff;
+  --textShadow: #000000;
+  --links: #FFEB3B;
+  --faqBackground: #fff383;
+  --linkHover: #212121;
+  --hoverEffects: #212121;
+  --titleColor: #0D47A1;
+  --titleColorOne: #0d48a1ab;
+  --heroText: #E3E3E3;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --serviceBackground: #dff3ff;
+  --blackColor: #212121;
+  --bgColorOne: #0D47A1;
+  --bgColorTwo: #FF9800;
+  --text: #FFFFFF;
+  --links: #FFEB3B;
+  --hoverEffects: #424242;
+  --bodyBackground: #f4f7fc;
+
+  /* Fonts */
+  --fFamily: "Roboto", sans-serif;
+  --foSizing: auto;
+  --fWeight: 400;
+  --fStyle: normal;
+  --fvSettings: "wdth" 100;
+}
+
+body {
+  padding-top: 86px;
+  background-color: var(--bodyBackground) !important;
+}
+
+* {
+  font-family: var(--fFamily);
+  font-optical-sizing: var(--foSizing);
+  font-weight: var(--fWeight);
+  font-style: var(--fStyle);
+  font-variation-settings: var(--fvSettings);
+}
+
+/* Who We Are */
+.HWAre .Header {
+  background: linear-gradient(135deg, var(--links), var(--links));
+}
+
+.HWAre .Header .Title {
+  color: var(--blackColor);
+}
+
+.HWAre .Header .Text{
+  font-size: 1.05rem;
+  color: var(--hoverEffects);
+}
+
+.HWAre .Content .HWAContent {
+  background-color: var(--activeLinks);
+  margin-top: -60px;
+  box-shadow: 2px 2px 4px var(--hoverEffects);
+}
+
+.HWAre .Content .HWAContent .Image {
+  max-width: 320px;
+}
+
+.HWAre .Description .STitle {
+  color: var(--backgroundColor) !important;
+}
+
+/* Mission */
+.OMission .Header {
+  background: linear-gradient(135deg, var(--links), var(--links));
+}
+
+.OMission .Header .Title {
+  color: var(--blackColor);
+}
+
+.OMission .Header .Text{
+  font-size: 1.05rem;
+  color: var(--hoverEffects);
+}
+
+.OMission .Content .OMContent {
+  background-color: var(--activeLinks);
+  margin-top: -60px;
+  box-shadow: 2px 2px 4px var(--hoverEffects);
+}
+
+.OMission .Content .OMContent .Image {
+  max-width: 320px;
+}
+
+.OMission .Description .STitle {
+  color: var(--backgroundColor) !important;
+}
+
+/* Team */
+.Team .Header {
+  background: linear-gradient(135deg, var(--links), var(--links));
+}
+
+.Team .Header .Title {
+  color: var(--blackColor);
+}
+
+.Team .Header .Text{
+  font-size: 1.05rem;
+  color: var(--hoverEffects);
+}
+
+.Team .TMembers {
+  position: relative;
+  z-index: 5;
+  margin-top: -80px;
+}
+
+.Team .TMembers .Cards{
+  border-radius: 0px;
+  box-shadow: 2px 2px 4px var(--hoverEffects);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Pricing</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/pricing.css">
+
+  <!-- GF Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- FA Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Calculator -->
+  <section id="about-us" class="container position-relative py-5 OMission Calculator">
+    <!-- Background -->
+    <div class="about-header text-white text-center py-5 position-relative mb-4 Header">
+      <h2 class="fw-bold pb-2 Title">Delivery Pricing Calculator</h2>
+      <p class="px-3 Text">Easily estimate your delivery cost with our Pricing Calculator! Just enter the package
+        weight, distance, and select the delivery speed to get an instant cost calculation in LKR. Plan your shipments
+        effortlessly</p>
+    </div>
+
+    <!-- Calculator Body -->
+    <div class="container Content">
+      <div
+        class="about-content p-4 p-md-5 mx-auto position-relative col-lg-10 col-md-10 col-sm-12 calculator-container CContainer">
+        <form id="priceCalculator">
+          <div class="mb-4">
+            <label for="weight" class="form-label">Package Weight (kg)</label>
+            <input type="number" class="form-control" id="weight" required>
+          </div>
+          <div class="mb-4">
+            <label for="distance" class="form-label">Distance (km)</label>
+            <input type="number" class="form-control" id="distance" required>
+          </div>
+          <div class="mb-4">
+            <label for="speed" class="form-label">Delivery Speed</label>
+            <select class="form-select" id="speed" required>
+              <option value="1">Standard (3-5 days)</option>
+              <option value="1.5">Express (1-2 days)</option>
+              <option value="2">Same Day</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary w-100 CPButton my-3" onclick="calculatePrice()">Calculate
+            Price</button>
+        </form>
+        <div class="mt-4 text-center">
+          <p class="result-box TCost" id="result">Total Cost: LKR 0.00</p>
+        </div>
+        <hr>
+        <a class="btn w-100 mt-3 POButton">Delivery Request <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function calculatePrice() {
+      const weight = parseFloat(document.getElementById('weight').value);
+      const distance = parseFloat(document.getElementById('distance').value);
+      const speedFactor = parseFloat(document.getElementById('speed').value);
+
+      if (isNaN(weight) || isNaN(distance)) {
+        alert('Please enter valid values for weight and distance.');
+        return;
+      }
+
+      const basePrice = 1000; // Base price in LKR
+      const weightRate = 200; // Price per kg
+      const distanceRate = 20; // Price per km
+
+      let totalCost = basePrice + (weight * weightRate) + (distance * distanceRate);
+      totalCost *= speedFactor;
+
+      document.getElementById('result').innerText = `Total Cost: LKR ${totalCost.toFixed(2)}`;
+    }
+  </script>
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
