@@ -31,7 +31,7 @@
     <div class="container-fluid">
       <!-- Logo Section -->
       <a class="navbar-brand CLogo" href="#">
-        <img src="/images/logo.png" alt="SEKIN EXPRESS LOGO">
+        <img src="images/logo.png" alt="SEKIN EXPRESS LOGO">
       </a>
 
       <!-- Toggler Button -->
@@ -49,17 +49,27 @@
           <!-- Links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start align-items-start NLinks">
             <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">HOME</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#TrackOrder">TRACK</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#Services">SERVICES</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#AboutUs">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#ContactUs">CONTACT US</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#FAQ">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">TRACK</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">FAQ</a></li>
           </ul>
 
-          <!-- Login -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ULogin">
-            <li class="nav-item ms-2">
-              <a href="#" class="dropdown SILink">SIGN IN</a>
+          <!-- Profile -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 UProfile">
+            <li class="nav-item">
+              <div class="btn-group dropstart">
+                <a type="button" class="dropdown PPic" data-bs-toggle="dropdown">
+                  <img src="images/User.jpg" class="rounded-circle mx-1">
+                </a>
+                <ul class="dropdown-menu DMenu">
+                  <li><a class="dropdown-item" href="#">PROFILE</a></li>
+                  <li><a class="dropdown-item" href="#">ORDERS</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -69,7 +79,7 @@
   <!-- Navigation Bar End -->
 
   <!-- Admin Dashboard -->
-  <section id="userDashboard" class="container position-relative py-5 DDashboard">
+  <section id="userDashboard" class="container position-relative pt-5 DDashboard">
     <!-- Background -->
     <div class="about-header text-white text-center py-5 position-relative mb-4 Header">
       <h2 class="fw-bold pb-2 Title">Admin Dashboard</h2>
@@ -118,10 +128,13 @@
           <h4 class="my-2 ULTitle">Useful Links</h4>
           <hr class="my-4 border-2 border-primary">
           <ul class="d-flex flex-column flex-md-row justify-content-center gap-2 p-0">
-            <li><a href="adminProfile.html" class="btn px-3 w-100">Profile <i class="fa-solid fa-up-right-from-square"></i></a></li>
-            <li><a href="manageUsers.html" class="btn px-3 w-100">Manage Users <i class="fa-solid fa-up-right-from-square"></i></a>
+            <li><a href="adminProfile.html" class="btn px-3 w-100">Profile <i
+                  class="fa-solid fa-up-right-from-square"></i></a></li>
+            <li><a href="manageUsers.html" class="btn px-3 w-100">Manage Users <i
+                  class="fa-solid fa-up-right-from-square"></i></a>
             </li>
-            <li><a href="manageDrivers.html" class="btn px-3 w-100">Manage Drivers <i class="fa-solid fa-up-right-from-square"></i></a>
+            <li><a href="manageDrivers.html" class="btn px-3 w-100">Manage Drivers <i
+                  class="fa-solid fa-up-right-from-square"></i></a>
             </li>
           </ul>
         </div>
@@ -132,7 +145,6 @@
   <!-- Footer Start -->
   <footer class="footer text-white text-center py-4 WSFooter">
     <div class="container">
-      <h3 class="FTitle">SEKIN EXPRESS</h3>
       <p class="fText">
         Everyday is a new day for us and we work really hard to satisfy our customer everywhere.
       </p>

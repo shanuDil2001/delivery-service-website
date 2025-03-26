@@ -31,7 +31,7 @@
     <div class="container-fluid">
       <!-- Logo Section -->
       <a class="navbar-brand CLogo" href="#">
-        <img src="/images/logo.png" alt="SEKIN EXPRESS LOGO">
+        <img src="images/logo.png" alt="SEKIN EXPRESS LOGO">
       </a>
 
       <!-- Toggler Button -->
@@ -49,17 +49,27 @@
           <!-- Links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start align-items-start NLinks">
             <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">HOME</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#TrackOrder">TRACK</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#Services">SERVICES</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#AboutUs">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#ContactUs">CONTACT US</a></li>
-            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#FAQ">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">TRACK</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">FAQ</a></li>
           </ul>
 
-          <!-- Login -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ULogin">
-            <li class="nav-item ms-2">
-              <a href="#" class="dropdown SILink">SIGN IN</a>
+          <!-- Profile -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 UProfile">
+            <li class="nav-item">
+              <div class="btn-group dropstart">
+                <a type="button" class="dropdown PPic" data-bs-toggle="dropdown">
+                  <img src="images/User.jpg" class="rounded-circle mx-1">
+                </a>
+                <ul class="dropdown-menu DMenu">
+                  <li><a class="dropdown-item" href="#">PROFILE</a></li>
+                  <li><a class="dropdown-item" href="#">ORDERS</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -160,7 +170,6 @@
   <!-- Footer Start -->
   <footer class="footer text-white text-center py-4 WSFooter">
     <div class="container">
-      <h3 class="FTitle">SEKIN EXPRESS</h3>
       <p class="fText">
         Everyday is a new day for us and we work really hard to satisfy our customer everywhere.
       </p>
