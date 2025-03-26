@@ -41,30 +41,31 @@
         <form id="deliveryRequest">
           <div class="mb-4">
             <label for="fullName" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name" required>
           </div>
           <div class="mb-4">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
           </div>
           <div class="mb-4">
             <label for="phoneNumber" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"
+              required>
           </div>
           <div class="mb-4">
             <label for="address" class="form-label">Delivery Address</label>
-            <textarea class="form-control" id="address" rows="3" placeholder="Delivery Address"
-              required></textarea>
+            <input type="text" class="form-control" id="address" name="deliveryAddress" placeholder="Delivery Address"
+              required>
           </div>
           <div class="mb-4">
             <label for="description" class="form-label">Item Description</label>
-            <textarea class="form-control" id="description" rows="3" placeholder="Item Description"
-              required></textarea>
+            <input type="text" class="form-control" id="description" name="description" placeholder="Item Description"
+              required>
           </div>
           <div class="mb-4">
             <label for="instructions" class="form-label">Additional Instructions</label>
-            <textarea class="form-control" id="instructions" rows="3" placeholder="Additional Instructions"
-              required></textarea>
+            <input type="text" class="form-control" id="instructions" name="instructions"
+              placeholder="Additional Instructions" required>
           </div>
           <button type="button" class="btn btn-primary w-100 CRButton my-3" onclick="">Submit Request</button>
         </form>
