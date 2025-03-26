@@ -43,28 +43,15 @@ body {
   font-variation-settings: var(--fvSettings);
 }
 
-/* Delivery Request */
-.DRequest .Header {
-  background: linear-gradient(135deg, var(--links), var(--links));
-}
+/* Open Delivery Request */
 
-.DRequest .Header .Title {
-  font-size: 2rem;
-  color: var(--blackColor);
-}
-
-.DRequest .Header .Text {
-  font-size: 1.05rem;
-  color: var(--blackColor);
-}
-
-.DRequest .Content .FContainer {
+.Content .FContainer {
   background-color: var(--activeLinks);
-  margin-top: -60px;
+  border-radius: 5px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
 
-.DRequest .Content .FContainer .CRButton {
+.Content .FContainer .CRButton {
   color: var(--blackColor);
   font-weight: 500 !important;
   border: 1px solid var(--hoverEffects);
@@ -72,10 +59,14 @@ body {
   transition: all 200ms;
 }
 
-.DRequest .Content .FContainer .CRButton:hover {
+.Content .FContainer .CRButton:hover {
   background-color: var(--backgroundColor);
 }
 
-.DRequest .Content .FContainer .CRButton:active {
+.Content .FContainer .CRButton:active {
   background-color: var(--links);
+}
+
+.Content .FContainer form input {
+  background-color: var(--faqBackground);
 }
