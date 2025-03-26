@@ -1,0 +1,232 @@
+:root {
+  /* Colors */
+  --backgroundColor: #FFD700;
+  --activeLinks: #ffffff;
+  --textShadow: #000000;
+  --links: #FFEB3B;
+  --faqBackground: #fff383;
+  --linkHover: #212121;
+  --hoverEffects: #212121;
+  --titleColor: #0D47A1;
+  --titleColorOne: #0d48a1ab;
+  --heroText: #E3E3E3;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --serviceBackground: #dff3ff;
+  --blackColor: #212121;
+  --bgColorOne: #0D47A1;
+  --bgColorTwo: #FF9800;
+  --text: #FFFFFF;
+  --links: #FFEB3B;
+  --hoverEffects: #424242;
+  --blueColor: #073c8b;
+  --bodyBackground: #f4f7fc;
+
+  /* Fonts */
+  --fFamily: "Roboto", sans-serif;
+  --foSizing: auto;
+  --fWeight: 400;
+  --fStyle: normal;
+  --fvSettings: "wdth" 100;
+}
+
+body {
+  background-color: var(--bodyBackground) !important;
+  padding-top: 86px;
+}
+
+* {
+  font-family: var(--fFamily);
+  font-optical-sizing: var(--foSizing);
+  font-weight: var(--fWeight);
+  font-style: var(--fStyle);
+  font-variation-settings: var(--fvSettings);
+}
+
+/* Profile */
+.UProfile .Header {
+  z-index: -1;
+  background: linear-gradient(135deg, var(--links), var(--links));
+}
+
+.UProfile .Header .Title {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+
+.UProfile .Header .Text {
+  font-size: 1.05rem;
+  color: var(--blackColor);
+}
+
+.PContainer .Card {
+  border-radius: 0;
+  margin-top: -60px;
+  box-shadow: 2px 2px 3px var(--hoverEffects);
+}
+
+.PContainer .Card .PImage {
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--backgroundColor);
+  object-fit: cover;
+}
+
+.PContainer .Card .Form .ANDButton {
+  color: var(--hoverEffects);
+  font-weight: 600 !important;
+  border: 1px solid var(--hoverEffects);
+  background-color: var(--backgroundColor);
+  transition: all 200ms;
+}
+
+.PContainer .Card .Form .ANDButton:hover {
+  background-color: var(--links);
+}
+
+.PContainer .Card .Form .ANDButton:active {
+  background-color: var(--backgroundColor);
+}
+
+.ULinks {
+  color: var(--whiteColor);
+  background: var(--links);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--hoverEffects);
+}
+
+.ULinks .ULTitle {
+  color: var(--bgColorOne);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.LinkDashboard {
+  color: var(--hoverEffects) !important;
+  text-decoration: none !important;
+  background-color: var(--faqBackground) !important;
+  border: 2px solid var(--hoverEffects) !important;
+  transition: all 200ms !important;
+}
+
+.LinkDashboard:hover {
+  color: var(--whiteColor) !important;
+  background-color: var(--backgroundColor) !important;
+  border: 2px solid var(--faqBackground) !important;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Header */
+.WSHeader {
+  background-color: var(--backgroundColor) !important;
+  box-shadow: 0px 2px 5px rgb(158, 158, 158);
+}
+
+.CLogo img {
+  max-width: 60px;
+}
+
+.OCBody {
+  background-color: var(--backgroundColor) !important;
+}
+
+.OCTitle {
+  color: var(--titleColor);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px var(--hoverEffects);
+}
+
+.OCBody .NLinks .nav-item a {
+  color: var(--activeLinks);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px var(--textShadow);
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.OCBody .NLinks .nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--hoverEffects), var(--hoverEffects));
+  transition: all 200ms ease-in-out;
+  transform: translateX(-50%);
+}
+
+.OCBody .NLinks .nav-item a:hover {
+  color: var(--linkHover);
+  text-shadow: 1px 1px 2px var(--linkHover);
+}
+
+.OCBody .NLinks .nav-item a:hover::before {
+  width: 100%;
+}
+
+.OCBody .NLinks .nav-item a:active {
+  color: var(--backgroundColor);
+}
+
+.ULogin li {
+  display: flex;
+  align-items: center;
+}
+
+.ULogin li a {
+  color: var(--titleColor);
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid var(--titleColor);
+  border-radius: 5px;
+  padding: 7px 14px 7px 14px;
+  transition: all 200ms;
+}
+
+.ULogin li a:hover {
+  color: var(--activeLinks);
+  background-color: var(--titleColor);
+  text-shadow: 1px 1px 2px var(--textShadow);
+}
+
+.ULogin li a:active {
+  color: var(--linkHover);
+  background-color: var(--links);
+  border: 2px solid var(--links);
+}
+
+/* Footer */
+.WSFooter {
+  background-color: rgb(20, 20, 20);
+}
+
+.WSFooter .FTitle {
+  font-size: 2rem;
+  color: var(--titleColor);
+  transition: 200ms;
+}
+
+.WSFooter .FSLinks .social-icon i {
+  font-size: 1.3rem;
+  color: var(--titleColor);
+  /* text-shadow: 3px 3px 4px var(--hoverEffects); */
+  transition: 200ms;
+}
+
+.WSFooter .FSLinks .social-icon i:hover {
+  color: var(--backgroundColor);
+}
+
+.WSFooter .DWSLink {
+  color: var(--titleColor);
+  transition: all 200ms;
+}
+
+.WSFooter .DWSLink:hover {
+  color: var(--backgroundColor);
+}
