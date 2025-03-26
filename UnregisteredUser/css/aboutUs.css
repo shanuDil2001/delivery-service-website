@@ -51,11 +51,6 @@ body {
   color: var(--blackColor);
 }
 
-.HWAre .Header .Text{
-  font-size: 1.05rem;
-  color: var(--hoverEffects);
-}
-
 .HWAre .Content .HWAContent {
   background-color: var(--activeLinks);
   margin-top: -60px;
@@ -77,11 +72,6 @@ body {
 
 .OMission .Header .Title {
   color: var(--blackColor);
-}
-
-.OMission .Header .Text{
-  font-size: 1.05rem;
-  color: var(--hoverEffects);
 }
 
 .OMission .Content .OMContent {
@@ -107,18 +97,13 @@ body {
   color: var(--blackColor);
 }
 
-.Team .Header .Text{
-  font-size: 1.05rem;
-  color: var(--hoverEffects);
-}
-
 .Team .TMembers {
   position: relative;
   z-index: 5;
   margin-top: -80px;
 }
 
-.Team .TMembers .Cards{
+.Team .TMembers .Cards {
   border-radius: 0px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }

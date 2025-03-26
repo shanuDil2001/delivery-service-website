@@ -40,25 +40,26 @@
         <form id="serviceFeedback">
           <div class="mb-4">
             <label for="fullName" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name" required>
           </div>
           <div class="mb-4">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
           </div>
           <div class="mb-4">
             <label for="rating" class="form-label">Rating</label>
-            <select class="form-select" id="rating" required>
-              <option value="1">1 - Poor</option>
-              <option value="2">2 - Fair</option>
-              <option value="3">3 - Good</option>
-              <option value="4">4 - Very Good</option>
-              <option value="5">5 - Excellent</option>
+            <select class="form-select" id="rating" name="rating" required>
+              <option value="1">Poor</option>
+              <option value="2">Fair</option>
+              <option value="3">Good</option>
+              <option value="4">Very Good</option>
+              <option value="5">Excellent</option>
             </select>
           </div>
           <div class="mb-4">
             <label for="comments" class="form-label">Delivery Address</label>
-            <textarea class="form-control" id="comments" rows="4" placeholder="Tell us about your experience" required></textarea>
+            <textarea class="form-control" id="comments" name="deliveryAddress" rows="4"
+              placeholder="Tell us about your experience" required></textarea>
           </div>
           <button type="button" class="btn btn-primary w-100 my-3 SButton" onclick="">Submit Request</button>
         </form>
