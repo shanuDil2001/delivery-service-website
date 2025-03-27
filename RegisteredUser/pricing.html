@@ -25,6 +25,58 @@
 </head>
 
 <body>
+
+  <!-- Navigation Bar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top WSHeader">
+    <div class="container-fluid">
+      <!-- Logo Section -->
+      <a class="navbar-brand CLogo" href="#">
+        <img src="images/logo.png" alt="SEKIN EXPRESS LOGO">
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end OCBody" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title OCTitle"><span class="POne">SEKIN </span><span class="PTwo">EXPRESS</span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start align-items-start NLinks">
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">TRACK</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">FAQ</a></li>
+          </ul>
+
+          <!-- Profile -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 UProfile">
+            <li class="nav-item">
+              <div class="btn-group dropstart">
+                <a type="button" class="dropdown PPic" data-bs-toggle="dropdown">
+                  <img src="images/User.jpg" class="rounded-circle mx-1">
+                </a>
+                <ul class="dropdown-menu DMenu">
+                  <li><a class="dropdown-item" href="userDashboard.html">DASHBOARD</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Bar End -->
+
   <!-- Calculator -->
   <section id="about-us" class="container position-relative py-5 OMission Calculator">
     <!-- Background -->
@@ -63,11 +115,40 @@
           <p class="result-box TCost" id="result">Total Cost: LKR 0.00</p>
         </div>
         <hr>
-        <a class="btn w-100 mt-3 POButton">Delivery Request <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="deliveryRequest.html" class="btn w-100 mt-3 POButton">Delivery Request <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
+  <!-- Footer Start -->
+  <footer class="footer text-white text-center py-4 WSFooter">
+    <div class="container">
+      <p class="fText">
+        Everyday is a new day for us and we work really hard to satisfy our customer everywhere.
+      </p>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons my-4 FSLinks">
+        <a href="#" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Divider Line -->
+      <hr class="footer-line">
+
+      <!-- Copyright and Design Credit -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 CName">&copy; Copyright SEKIN EXPRESS. All Rights Reserved</p>
+        <p class="mb-0 DText">Designed and Developed by <a href="#" class="designer-link DWSLink">InnovateX</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Script for Calculator -->
   <script>
     function calculatePrice() {
       const weight = parseFloat(document.getElementById('weight').value);

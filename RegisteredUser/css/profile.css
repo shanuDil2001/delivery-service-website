@@ -103,3 +103,131 @@ body {
 .PContainer .Card .Form .UButton:active {
   background-color: var(--backgroundColor);
 }
+
+.LinkDashboard {
+  color: var(--hoverEffects) !important;
+  text-decoration: none !important;
+  background-color: var(--faqBackground) !important;
+  border: 2px solid var(--hoverEffects) !important;
+  transition: all 200ms !important;
+}
+
+.LinkDashboard:hover {
+  color: var(--whiteColor) !important;
+  background-color: var(--backgroundColor) !important;
+  border: 2px solid var(--faqBackground) !important;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Header */
+.WSHeader {
+  background-color: var(--backgroundColor) !important;
+  box-shadow: 0px 2px 5px rgb(158, 158, 158);
+}
+
+.CLogo img {
+  max-width: 60px;
+}
+
+.OCBody {
+  background-color: var(--backgroundColor) !important;
+}
+
+.OCTitle {
+  color: var(--titleColor);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px var(--hoverEffects);
+}
+
+.OCBody .NLinks .nav-item a {
+  color: var(--activeLinks);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px var(--textShadow);
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.OCBody .NLinks .nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--hoverEffects), var(--hoverEffects));
+  transition: all 200ms ease-in-out;
+  transform: translateX(-50%);
+}
+
+.OCBody .NLinks .nav-item a:hover {
+  color: var(--linkHover);
+  text-shadow: 1px 1px 2px var(--linkHover);
+}
+
+.OCBody .NLinks .nav-item a:hover::before {
+  width: 100%;
+}
+
+.OCBody .NLinks .nav-item a:active {
+  color: var(--backgroundColor);
+}
+
+.UProfile .PPic img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--titleColor);
+  transition: all 100ms;
+}
+
+.UProfile .PPic img:hover {
+  scale: 1.05;
+}
+
+.DMenu {
+  background-color: #FFEB3B !important;
+}
+
+.DMenu li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.DMenu li a {
+  color: var(--linkHover);
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--textShadow);
+  border-radius: 5px;
+  transition: all 200ms;
+}
+
+.DMenu li a:hover {
+  background-color: var(--backgroundColor);
+}
+
+/* Footer */
+.WSFooter {
+  background-color: rgb(20, 20, 20);
+}
+
+.WSFooter .FSLinks .social-icon i {
+  font-size: 1.3rem;
+  color: var(--titleColor);
+  /* text-shadow: 3px 3px 4px var(--hoverEffects); */
+  transition: 200ms;
+}
+
+.WSFooter .FSLinks .social-icon i:hover {
+  color: var(--backgroundColor);
+}
+
+.WSFooter .DWSLink {
+  color: var(--titleColor);
+  transition: all 200ms;
+}
+
+.WSFooter .DWSLink:hover {
+  color: var(--backgroundColor);
+}

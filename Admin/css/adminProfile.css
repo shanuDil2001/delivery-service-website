@@ -104,20 +104,6 @@ body {
   background-color: var(--backgroundColor);
 }
 
-.ULinks {
-  color: var(--whiteColor);
-  background: var(--links);
-  padding: 20px;
-  text-align: center;
-  border: 1px solid var(--hoverEffects);
-}
-
-.ULinks .ULTitle {
-  color: var(--bgColorOne);
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 .LinkDashboard {
   color: var(--hoverEffects) !important;
   text-decoration: none !important;

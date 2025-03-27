@@ -25,8 +25,60 @@
 </head>
 
 <body>
+
+  <!-- Navigation Bar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top WSHeader">
+    <div class="container-fluid">
+      <!-- Logo Section -->
+      <a class="navbar-brand CLogo" href="#">
+        <img src="images/logo.png" alt="SEKIN EXPRESS LOGO">
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end OCBody" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title OCTitle"><span class="POne">SEKIN </span><span class="PTwo">EXPRESS</span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start align-items-start NLinks">
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">TRACK</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="#">FAQ</a></li>
+          </ul>
+
+          <!-- Profile -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 UProfile">
+            <li class="nav-item">
+              <div class="btn-group dropstart">
+                <a type="button" class="dropdown PPic" data-bs-toggle="dropdown">
+                  <img src="images/User.jpg" class="rounded-circle mx-1">
+                </a>
+                <ul class="dropdown-menu DMenu">
+                  <li><a class="dropdown-item" href="userDashboard.html">DASHBOARD</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Bar End -->
+
   <!-- User Dashboard -->
-  <section id="userDashboard" class="container position-relative py-5 UDashboard">
+  <section id="userDashboard" class="container position-relative pt-5 UDashboard">
     <!-- Background -->
     <div class="about-header text-white text-center py-5 position-relative mb-4 Header">
       <h2 class="fw-bold pb-2 Title">User Dashboard</h2>
@@ -37,7 +89,7 @@
       <main class="content col-lg-11 col-md-11 col-sm-12 Content">
         <h4 class="text-center">Order Requests</h4>
         <table class="table">
-          <thead class="table-warning" style="background-color: #007bff;">
+          <thead class="table-warning">
             <tr>
               <th>Request ID</th>
               <th>Tracking Number</th>
@@ -48,12 +100,12 @@
             <tr>
               <td>#12345</td>
               <td>SE-12345</td>
-              <td><a href="">Open</a></td>
+              <td><a href="openDeliveryRequest.html">Open</a></td>
             </tr>
             <tr>
               <td>#12346</td>
               <td>SE-12356</td>
-              <td><a href="">Open</a></td>
+              <td><a href="openDeliveryRequest.html">Open</a></td>
             </tr>
           </tbody>
         </table>
@@ -62,16 +114,45 @@
           <h4 class="my-2 ULTitle">Useful Links</h4>
           <hr class="my-4 border-2 border-primary">
           <ul class="d-flex flex-column flex-md-row justify-content-center gap-2 p-0">
-            <li><a href="#" class="btn px-3 w-100">Profile <i class="fa-solid fa-up-right-from-square"></i></a></li>
-            <li><a href="#" class="btn px-3 w-100">Feedback <i class="fa-solid fa-up-right-from-square"></i></a></li>
-            <li><a href="#" class="btn px-3 w-100">Tracking <i class="fa-solid fa-up-right-from-square"></i></a></li>
-            <li><a href="#" class="btn px-3 w-100">Pricing <i class="fa-solid fa-up-right-from-square"></i></a></li>
-            <li><a href="#" class="btn px-3 w-100">Support <i class="fa-solid fa-up-right-from-square"></i></a></li>
+            <li><a href="profile.html" class="btn px-3 w-100">Profile <i
+                  class="fa-solid fa-up-right-from-square"></i></a></li>
+            <li><a href="feedback.html" class="btn px-3 w-100">Feedback <i
+                  class="fa-solid fa-up-right-from-square"></i></a></li>
+            <li><a href="trackOrder.html" class="btn px-3 w-100">Tracking <i
+                  class="fa-solid fa-up-right-from-square"></i></a></li>
           </ul>
         </div>
       </main>
     </div>
   </section>
+
+  <!-- Footer Start -->
+  <footer class="footer text-white text-center py-4 WSFooter">
+    <div class="container">
+      <p class="fText">
+        Everyday is a new day for us and we work really hard to satisfy our customer everywhere.
+      </p>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons my-4 FSLinks">
+        <a href="#" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Divider Line -->
+      <hr class="footer-line">
+
+      <!-- Copyright and Design Credit -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 CName">&copy; Copyright SEKIN EXPRESS. All Rights Reserved</p>
+        <p class="mb-0 DText">Designed and Developed by <a href="#" class="designer-link DWSLink">InnovateX</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
 
   <!-- Bootstrap JS Link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

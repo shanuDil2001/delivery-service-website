@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Home</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/home.css">
+
+  <!-- GF Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- FA Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation Bar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top WSHeader">
+    <div class="container-fluid">
+      <!-- Logo Section -->
+      <a class="navbar-brand CLogo" href="home.html">
+        <img src="images/logo.png" alt="SEKIN EXPRESS LOGO">
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end OCBody" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title OCTitle"><span class="POne">SEKIN </span><span class="PTwo">EXPRESS</span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Links -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-start align-items-start NLinks">
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="home.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="home.html#aboutUs">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="home.html#Services">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="home.html#Pricing">PRICING</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="home.html#Contact">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link mx-2 my-2" href="home.html#FAQ">FAQ</a></li>
+          </ul>
+
+          <!-- Profile -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 UProfile">
+            <li class="nav-item">
+              <div class="btn-group dropstart">
+                <a type="button" class="dropdown PPic" data-bs-toggle="dropdown">
+                  <img src="images/User.jpg" class="rounded-circle mx-1">
+                </a>
+                <ul class="dropdown-menu DMenu">
+                  <li><a class="dropdown-item" href="adminProfile.html">PROFILE</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Bar End -->
+
+  <!-- Page Content -->
+
+  <!-- Hero (Tracking) Start -->
+  <div class="parallax Parallax" id="TrackOrder">
+    <div class="overlay Overaly"></div>
+    <div class="container TDetails">
+      <div class="row px-3">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-10 px-md-4 CDetails">
+          <img class="HSLogo" src="images/Hero.png" alt="Logo">
+          <h2 class="HSTitle">Swift, Secure, and Hassle-Free Deliveries</h2>
+          <p class="HSSTitle">On-Time, Every Time - Straight to Your Doorstep.</p>
+          <p class="HSMessage">Track your package in real-time and enjoy hassle-free shipping with trusted
+            service.</p>
+        </div>
+      </div>
+      <div class="row mb-4 px-3">
+        <div class="track-order col-lg-11 col-md-11 col-sm-12 px-md-4 TOrder">
+          <h4 class="mb-4 TOTitle">Track your package in seconds</h4>
+          <form action="" method="POST">
+            <input type="text" name="tracking_number" class="form-control TOInput" placeholder="Enter Your Tracking ID"
+              required>
+            <button type="submit" class="btn mt-2 TOButton"><i class="fas fa-search"></i> Track</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Hero (Tracking) End -->
+
+  <!-- AboutUS Start -->
+  <section id="aboutUs" class="position-relative pb-5">
+    <!-- Background -->
+    <div class="text-white text-center py-5 position-relative mb-4 Header">
+      <h2 class="fw-bold pb-2 Title">About Us</h2>
+    </div>
+
+    <!-- Content Box -->
+    <div class="container Content">
+      <div
+        class="p-4 p-md-5 mx-auto d-flex flex-column flex-md-row align-items-center position-relative col-lg-11 col-md-11 col-sm-12 AUContent">
+        <!-- Image -->
+        <div class="me-md-4 mb-4 mb-md-0">
+          <img src="images/logo.png" alt="Delivery Service" class="img-fluid Image">
+        </div>
+        <!-- Description -->
+        <div class="text-start Description">
+          <h4 class="fw-bold mb-3 Title">Swift & Secure Deliveries</h4>
+          <p class="text-muted Text">At <strong>Sekin Express Delivery</strong>, we specialize in reliable and
+            fast deliveries. Our advanced tracking system ensures transparency, and our dedicated team guarantees your
+            packages arrive safely.</p>
+          <hr>
+          <p class="fw-bold mb-1">Kosala Dananjana</p>
+          <p class="text-muted small">Founder of Sekin Express Delivery</p>
+          <a href="aboutUs.html" class="btn w-100 mt-4 LMButton">More Info <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- AboutUs End -->
+
+  <!-- Services Start -->
+  <section id="Services" class="position-relative py-5">
+    <!-- Background -->
+    <div class="text-white text-center py-5 position-relative mb-4 Header">
+      <h2 class="fw-bold pb-2 Title">Services</h2>
+    </div>
+
+    <!-- Content Box -->
+    <div class="container Services">
+      <div class="row justify-content-center">
+        <div class="col-lg-11 col-md-11 col-sm-12 text-center">
+
+          <div class="row mt-4">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card my-2 Cards">
+                <img src="images/parcel.png" class="card-img-top mx-auto mt-3 px-3" alt="Team Member">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Parcel Delivery</h4>
+                  <p class="card-text text-muted">We provide fast and secure parcel delivery, ensuring your packages
+                    arrive safely.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card my-2 Cards">
+                <img src="images/parcel.png" class="card-img-top mx-auto mt-3 px-3" alt="Team Member">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Food Delivery</h4>
+                  <p class="card-text text-muted">Enjoy delicious meals delivered hot and fresh to your doorstep with
+                    our reliable food service.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card my-2 Cards">
+                <img src="images/parcel.png" class="card-img-top mx-auto mt-3 px-3" alt="Team Member">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Grocery Delivery</h4>
+                  <p class="card-text text-muted">Order groceries online, and we will deliver them to your home quickly
+                    and conveniently.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services End -->
+
+  <!-- Pricing Start -->
+  <section id="Pricing" class="position-relative py-5">
+    <!-- Background -->
+    <div class="text-white text-center py-5 position-relative mb-4 Header">
+      <h2 class="fw-bold pb-2 Title">Pricing</h2>
+    </div>
+
+    <!-- Calculator Body -->
+    <div class="container Content">
+      <div class="p-4 p-md-5 mx-auto position-relative col-lg-11 col-md-11 col-sm-12 calculator-container CContainer">
+        <p class="px-3 text-center text-muted Text">Easily estimate your delivery cost with our Pricing Calculator! Just
+          enter the package
+          weight, distance, and select the delivery speed to get an instant cost calculation in LKR. Plan your shipments
+          effortlessly</p>
+        <hr class="border-2 border-danger my-4">
+        <form id="priceCalculator">
+          <div class="mb-4">
+            <label for="weight" class="form-label">Package Weight (kg)</label>
+            <input type="number" class="form-control" id="weight" name="weight" placeholder="Package Weight (kg)"
+              required>
+          </div>
+          <div class="mb-4">
+            <label for="distance" class="form-label">Distance (km)</label>
+            <input type="number" class="form-control" id="distance" name="distance" placeholder="Distance (km)"
+              required>
+          </div>
+          <div class="mb-4">
+            <label for="speed" class="form-label">Delivery Speed</label>
+            <select class="form-select" id="speed" name="speed" required>
+              <option value="1">Standard (3-5 days)</option>
+              <option value="1.5">Express (1-2 days)</option>
+              <option value="2">Same Day</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary w-100 CPButton my-3" onclick="calculatePrice()">Calculate
+            Price</button>
+        </form>
+        <div class="mt-4 text-center">
+          <p class="result-box TCost" id="result"></p>
+        </div>
+        <hr class="border-2 border-danger my-4">
+        <a href="deliveryRequest.html" class="btn w-100 mt-3 DRButton POButton">Delivery Request <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function calculatePrice() {
+      const weight = parseFloat(document.getElementById('weight').value);
+      const distance = parseFloat(document.getElementById('distance').value);
+      const speedFactor = parseFloat(document.getElementById('speed').value);
+
+      if (isNaN(weight) || isNaN(distance)) {
+        alert('Please enter valid values for weight and distance.');
+        return;
+      }
+
+      const basePrice = 1000; // Base price in LKR
+      const weightRate = 200; // Price per kg
+      const distanceRate = 20; // Price per km
+
+      let totalCost = basePrice + (weight * weightRate) + (distance * distanceRate);
+      totalCost *= speedFactor;
+
+      document.getElementById('result').innerText = `Total Cost: LKR ${totalCost.toFixed(2)}`;
+    }
+  </script>
+  <!-- Pricing End -->
+
+  <!-- Contact Start -->
+  <section id="Contact" class="position-relative py-5">
+    <!-- Background -->
+    <div class="text-white text-center py-5 position-relative mb-4 Header">
+      <h2 class="fw-bold pb-2 Title">Contact Us</h2>
+    </div>
+
+    <!-- Content -->
+    <div class="container Content">
+      <div class="p-4 p-md-5 mx-auto position-relative col-lg-11 col-md-11 col-sm-12 CContainer">
+        <div class="row justify-content-center contactBoxes">
+          <!-- Types -->
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="Card text-center px-3 pt-3">
+              <p class="text-muted"><i class="fas fa-map-marker-alt text-muted me-2"></i> 123, Colombo, Sri Lanka</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="Card text-center px-3 pt-3">
+              <p class="text-muted"><i class="fas fa-envelope text-muted me-2"></i> info@koombiyodelivery.com</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="Card text-center px-3 pt-3">
+              <p class="text-muted"><i class="fas fa-phone text-muted me-2"></i> +94 71 123 4567</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-2 border-danger mb-4">
+
+        <p class="px-3 text-muted text-center mb-4">Have questions? Reach out to us and we'll be happy to assist you.
+        </p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+          </div>
+          <button type="submit" class="btn w-100 mb-3 SMButton">Send Message</button>
+        </form>
+
+        <hr class="border-2 border-danger mb-4">
+
+        <p class="text-center text-muted fw-bold">Social Media Links</p>
+        <div class="mt-4 d-flex justify-content-center gap-4 SIcons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact End -->
+
+  <!-- FAQ Start -->
+  <section id="FAQ" class="position-relative py-5">
+    <!-- Background -->
+    <div class="text-white text-center py-5 position-relative mb-4 Header">
+      <h2 class="fw-bold pb-2 Title">FAQ</h2>
+    </div>
+
+    <!-- Content Box -->
+    <div class="container Questions">
+      <div class="mx-auto d-flex justify-content-center position-relative col-lg-11 col-md-11 col-sm-12 ContentBox">
+
+        <div class="w-100 accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                How can I track my delivery?
+              </button>
+            </h2>
+            <div id="faqCollapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can track your delivery in real time using our tracking system. Simply enter your
+                tracking number on our website.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse2">
+                What are the delivery timeframes?
+              </button>
+            </h2>
+            <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Delivery times depend on the service chosen. Express delivery takes a few hours, while
+                standard shipping may take 1-3 days.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse3">
+                Do you offer same-day delivery?
+              </button>
+            </h2>
+            <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we provide same-day delivery for eligible locations. Please check availability when
+                placing your order.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse4">
+                What happens if my package is delayed?
+              </button>
+            </h2>
+            <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We strive for timely deliveries, but if there's a delay, our support team will assist you
+                and provide updates.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- FAQ End -->
+
+  <!-- WhatsApp Start -->
+  <a href="https://wa.me/94711234567" class="whatsapp-float WhatsApp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- WhatsApp End -->
+
+  <!-- Footer Start -->
+  <footer class="footer text-white text-center py-4 WSFooter">
+    <div class="container">
+      <p class="fText">
+        Everyday is a new day for us and we work really hard to satisfy our customer everywhere.
+      </p>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons my-4 FSLinks">
+        <a href="#" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon mx-2"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Divider Line -->
+      <hr class="footer-line">
+
+      <!-- Copyright and Design Credit -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 CName">&copy; Copyright SEKIN EXPRESS. All Rights Reserved</p>
+        <p class="mb-0 DText">Designed and Developed by <a href="#" class="designer-link DWSLink">InnovateX</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
