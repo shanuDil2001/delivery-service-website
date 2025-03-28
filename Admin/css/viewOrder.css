@@ -43,28 +43,14 @@ body {
   font-variation-settings: var(--fvSettings);
 }
 
-/* Calculator */
-.Calculator .Header {
-  background: linear-gradient(135deg, var(--links), var(--links));
-}
-
-.Calculator .Header .Title {
-  font-size: 2rem;
-  color: var(--blackColor);
-}
-
-.Calculator .Header .Text {
-  font-size: 1.05rem;
-  color: var(--blackColor);
-}
-
-.Calculator .Content .CContainer {
+/* Open Delivery Request */
+.Content .FContainer {
   background-color: var(--activeLinks);
-  margin-top: -60px;
+  border-radius: 5px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
 
-.Calculator .Content .CContainer .CPButton {
+.Content .FContainer .CRButton {
   color: var(--blackColor);
   font-weight: 500 !important;
   border: 1px solid var(--hoverEffects);
@@ -72,38 +58,31 @@ body {
   transition: all 200ms;
 }
 
-.Calculator .Content .CContainer .CPButton:hover {
+.Content .FContainer .CRButton:hover {
   background-color: var(--backgroundColor);
 }
 
-.Calculator .Content .CContainer .CPButton:active {
+.Content .FContainer .CRButton:active {
   background-color: var(--links);
 }
 
-.Calculator .CContainer .POButton {
-  color: var(--backgroundColor);
-  font-weight: 600 !important;
-  border: 1px solid var(--backgroundColor);
-  background-color: var(--link);
-  transition: all 200ms;
-}
-
-.Calculator .CContainer .POButton:hover {
-  color: var(--hoverEffects);
+.Content .FContainer form input {
   background-color: var(--faqBackground);
 }
 
-.Calculator .CContainer .POButton:active {
-  background-color: var(--activeLinks);
+.LinkDashboard {
+  color: var(--hoverEffects) !important;
+  text-decoration: none !important;
+  background-color: var(--faqBackground) !important;
+  border: 2px solid var(--hoverEffects) !important;
+  transition: all 200ms !important;
 }
 
-.TCost {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #28a745;
+.LinkDashboard:hover {
+  color: var(--whiteColor) !important;
+  background-color: var(--backgroundColor) !important;
+  border: 2px solid var(--faqBackground) !important;
 }
-
-/* -------------------------------------------------------------------- */
 
 /* Header */
 .WSHeader {

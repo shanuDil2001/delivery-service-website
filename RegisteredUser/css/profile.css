@@ -30,6 +30,10 @@
   --fvSettings: "wdth" 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bodyBackground) !important;
   padding-top: 86px;

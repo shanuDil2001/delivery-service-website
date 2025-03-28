@@ -29,6 +29,10 @@
   --fvSettings: "wdth" 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 86px;
   background-color: var(--bodyBackground) !important;
@@ -41,6 +45,113 @@ body {
   font-weight: var(--fWeight);
   font-style: var(--fStyle);
   font-variation-settings: var(--fvSettings);
+}
+
+/* Header */
+.WSHeader {
+  background-color: var(--backgroundColor) !important;
+  box-shadow: 0px 2px 5px rgb(158, 158, 158);
+}
+
+.CLogo img {
+  max-width: 60px;
+}
+
+.OCBody {
+  background-color: var(--backgroundColor) !important;
+}
+
+.OCTitle {
+  color: var(--titleColor);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px var(--hoverEffects);
+}
+
+.OCBody .NLinks .nav-item a {
+  color: var(--activeLinks);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px var(--textShadow);
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.OCBody .NLinks .nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--hoverEffects), var(--hoverEffects));
+  transition: all 200ms ease-in-out;
+  transform: translateX(-50%);
+}
+
+.OCBody .NLinks .nav-item a:hover {
+  color: var(--linkHover);
+  text-shadow: 1px 1px 2px var(--linkHover);
+}
+
+.OCBody .NLinks .nav-item a:hover::before {
+  width: 100%;
+}
+
+.OCBody .NLinks .nav-item a:active {
+  color: var(--backgroundColor);
+}
+
+.ULogin li {
+  display: flex;
+  align-items: center;
+}
+
+.ULogin li a {
+  color: var(--titleColor);
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid var(--titleColor);
+  border-radius: 5px;
+  padding: 7px 14px 7px 14px;
+  transition: all 200ms;
+}
+
+.ULogin li a:hover {
+  color: var(--activeLinks);
+  background-color: var(--titleColor);
+  text-shadow: 1px 1px 2px var(--textShadow);
+}
+
+.ULogin li a:active {
+  color: var(--linkHover);
+  background-color: var(--links);
+  border: 2px solid var(--links);
+}
+
+/* Footer */
+.WSFooter {
+  background-color: rgb(20, 20, 20);
+}
+
+.WSFooter .FSLinks .social-icon i {
+  font-size: 1.3rem;
+  color: var(--titleColor);
+  /* text-shadow: 3px 3px 4px var(--hoverEffects); */
+  transition: 200ms;
+}
+
+.WSFooter .FSLinks .social-icon i:hover {
+  color: var(--backgroundColor);
+}
+
+.WSFooter .DWSLink {
+  color: var(--titleColor);
+  transition: all 200ms;
+}
+
+.WSFooter .DWSLink:hover {
+  color: var(--backgroundColor);
 }
 
 /* Feedback */
