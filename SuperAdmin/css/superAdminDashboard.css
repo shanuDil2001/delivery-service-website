@@ -87,7 +87,7 @@ body {
   border: 2px solid var(--whiteColor);
 }
 
-.ANDLink {
+.ANALink {
   color: var(--hoverEffects) !important;
   text-decoration: none !important;
   background-color: var(--faqBackground) !important;
@@ -95,10 +95,10 @@ body {
   transition: all 200ms !important;
 }
 
-.ANDLink:hover {
+.ANALink:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--backgroundColor) !important;
-  border: 2px solid var(--faqBackground) !important;
+  background-color: var(--titleColor) !important;
+  border: 2px solid var(--blackColor) !important;
 }
 
 /* -------------------------------------------------------------------- */
