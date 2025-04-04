@@ -59,6 +59,7 @@ body {
 
 .Tracking .Content .TContainer {
   background-color: var(--activeLinks);
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
@@ -89,8 +90,8 @@ body {
 
 .LinkDashboard:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--backgroundColor) !important;
-  border: 2px solid var(--faqBackground) !important;
+  background-color: var(--titleColor) !important;
+  border: 2px solid var(--blackColor) !important;
 }
 
 /* -------------------------------------------------------------------- */

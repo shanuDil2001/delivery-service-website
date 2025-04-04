@@ -64,8 +64,19 @@ body {
 
 .DRequest .Content .FContainer {
   background-color: var(--activeLinks);
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
+}
+
+.FContainer .Sender {
+  background-color: #f0f8ff;
+  border-radius: 5px;
+}
+
+.FContainer .Recipient {
+  background-color: #f4f1f8;
+  border-radius: 5px;
 }
 
 .DRequest .Content .FContainer .CRButton {
@@ -94,8 +105,8 @@ body {
 
 .LinkDashboard:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--backgroundColor) !important;
-  border: 2px solid var(--faqBackground) !important;
+  background-color: var(--titleColor) !important;
+  border: 2px solid var(--blackColor) !important;
 }
 
 /* -------------------------------------------------------------------- */

@@ -57,6 +57,7 @@ body {
 
 .HWAre .Content .HWAContent {
   background-color: var(--activeLinks);
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
@@ -80,6 +81,7 @@ body {
 
 .OMission .Content .OMContent {
   background-color: var(--activeLinks);
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
@@ -108,7 +110,7 @@ body {
 }
 
 .Team .TMembers .Cards {
-  border-radius: 0px;
+  border-radius: 5px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
 
