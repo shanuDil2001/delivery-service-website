@@ -61,6 +61,7 @@ body {
 
 .PContainer .Card {
   border-radius: 0;
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 3px var(--hoverEffects);
 }
@@ -114,8 +115,8 @@ body {
 
 .LinkDashboard:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--backgroundColor) !important;
-  border: 2px solid var(--faqBackground) !important;
+  background-color: var(--titleColor) !important;
+  border: 2px solid var(--blackColor) !important;
 }
 
 /* -------------------------------------------------------------------- */

@@ -29,6 +29,10 @@
   --fvSettings: "wdth" 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding-top: 86px;
   background-color: var(--bodyBackground) !important;
@@ -50,6 +54,16 @@ body {
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
 
+.FContainer .Sender {
+  background-color: #f0f8ff;
+  border-radius: 5px;
+}
+
+.FContainer .Recipient {
+  background-color: #f4f1f8;
+  border-radius: 5px;
+}
+
 .Content .FContainer .CRButton {
   color: var(--blackColor);
   font-weight: 500 !important;
@@ -67,7 +81,7 @@ body {
 }
 
 .Content .FContainer form input {
-  background-color: var(--faqBackground);
+  background-color: var(--heroText);
 }
 
 .LinkDashboard {
@@ -80,9 +94,11 @@ body {
 
 .LinkDashboard:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--backgroundColor) !important;
-  border: 2px solid var(--faqBackground) !important;
+  background-color: var(--titleColor) !important;
+  border: 2px solid var(--blackColor) !important;
 }
+
+/* -------------------------------------------------------------------- */
 
 /* Header */
 .WSHeader {
