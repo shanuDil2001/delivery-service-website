@@ -63,6 +63,7 @@ body {
   margin: 50px auto;
   padding: 20px;
   background: var(--whiteColor);
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }

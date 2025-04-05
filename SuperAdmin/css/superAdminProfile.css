@@ -60,7 +60,7 @@ body {
 }
 
 .PContainer .Card {
-  border-radius: 0;
+  border-radius: 5px;
   margin-top: -60px;
   box-shadow: 2px 2px 3px var(--hoverEffects);
 }
