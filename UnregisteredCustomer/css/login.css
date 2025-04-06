@@ -154,9 +154,10 @@ body {
   color: var(--backgroundColor);
 }
 
-/* Sign Up */
+/* Log In */
 .Content .FContainer {
   background-color: var(--activeLinks);
+  border-radius: 5px;
   box-shadow: 2px 2px 4px var(--hoverEffects);
 }
 
