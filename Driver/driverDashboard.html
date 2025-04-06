@@ -65,6 +65,7 @@
                 </a>
                 <ul class="dropdown-menu DMenu">
                   <li><a class="dropdown-item" href="driverProfile.html">PROFILE</a></li>
+                  <li><a class="dropdown-item" href="driverDashboard.html">DASHBOARD</a></li>
                   <hr>
                   <li><a class="dropdown-item" href="#">LOG OUT</a></li>
                 </ul>
@@ -87,12 +88,12 @@
     <!-- Content -->
     <div class="container">
       <main class="content col-lg-11 col-md-11 col-sm-12 Content">
-        <h4 class="text-center">Active Orders</h4>
+        <h4 class="text-center">Active Delivery Requests</h4>
 
         <!-- Search -->
         <div class="Search card p-3 my-3">
           <form class="form-inline d-flex gap-2" action="" method="GET">
-            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Enter Delivery ID"
+            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Enter Tracking ID"
               aria-label="Search">
             <button class="btn my-2 my-sm-0 SButton" type="submit">Search</button>
           </form>
@@ -101,19 +102,19 @@
         <table class="table">
           <thead class="table-warning">
             <tr>
-              <th>Delivery ID</th>
-              <th>Customer Name</th>
+              <th>Tracking ID</th>
+              <th>Sender's Name</th>
               <th>View Request</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>#12345</td>
+              <td>#71234567</td>
               <td>Kosala</td>
               <td><a href="orderDetails.html">Open</a></td>
             </tr>
             <tr>
-              <td>#12346</td>
+              <td>#11234567</td>
               <td>Dananjana</td>
               <td><a href="orderDetails.html">Open</a></td>
             </tr>
@@ -125,7 +126,7 @@
           <hr class="my-4 border-2 border-primary">
           <ul class="d-flex flex-column flex-md-row justify-content-center gap-2 p-0">
             <li><a href="driverProfile.html" class="btn px-3 w-100">Profile <i class="fa-solid fa-up-right-from-square"></i></a></li>
-            <li><a href="deliveredOrders.html" class="btn px-3 w-100">Delivered Orders <i class="fa-solid fa-up-right-from-square"></i></a>
+            <li><a href="deliveredOrders.html" class="btn px-3 w-100">Delivered <i class="fa-solid fa-up-right-from-square"></i></a>
             </li>
             <li><a href="orderTrackDriver.html" class="btn px-3 w-100">Track <i class="fa-solid fa-up-right-from-square"></i></a></li>
           </ul>
