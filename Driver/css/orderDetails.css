@@ -64,7 +64,7 @@ body {
   border-radius: 5px;
 }
 
-.Content .FContainer .CRButton {
+.Content .FContainer .DButton {
   color: var(--blackColor);
   font-weight: 500 !important;
   border: 1px solid var(--hoverEffects);
@@ -72,11 +72,11 @@ body {
   transition: all 200ms;
 }
 
-.Content .FContainer .CRButton:hover {
+.Content .FContainer .DButton:hover {
   background-color: var(--backgroundColor);
 }
 
-.Content .FContainer .CRButton:active {
+.Content .FContainer .DButton:active {
   background-color: var(--links);
 }
 

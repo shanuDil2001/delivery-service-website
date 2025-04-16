@@ -64,22 +64,6 @@ body {
   border-radius: 5px;
 }
 
-.Content .FContainer .CRButton {
-  color: var(--blackColor);
-  font-weight: 500 !important;
-  border: 1px solid var(--hoverEffects);
-  background-color: var(--links);
-  transition: all 200ms;
-}
-
-.Content .FContainer .CRButton:hover {
-  background-color: var(--backgroundColor);
-}
-
-.Content .FContainer .CRButton:active {
-  background-color: var(--links);
-}
-
 .Content .FContainer form input {
   background-color: var(--heroText);
 }
